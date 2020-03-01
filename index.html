@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html lang="zh">
 
@@ -10,6 +9,8 @@
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--AOS CSS CDN-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!--自己的樣式-->
     <link rel="stylesheet" href="./style.css">
@@ -43,7 +44,7 @@
         </div>
     </nav>
 
-    <!-- 輪播 -->
+    <!--輪播圖-->
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -66,7 +67,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="/img/banner3.jpg" class="d-block w-100" alt="...">
+                <img src="./img/banner3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -83,12 +84,13 @@
         </a>
     </div>
 
+
     <!-- 容器 -->
     <div class="container">
-        <h1 class="text-center py-5">Service</h1>
+        <h1 class="text-center py-5" data-aos="fade-down" data-aos-offset="200">Service</h1>
 
         <!-- 卡片 -->
-        <div class="card-group">
+        <div class="card-group" data-aos="fade-up" data-aos-offset="300" data-aos-delay="400">
             <div class="card border-0 p-2 text-center">
                 <img src="./img/icon5.png" class="card-img-top p-5 icon-style icon-5" alt="...">
                 <div class="card-body">
@@ -122,12 +124,12 @@
     <!-- 灰色背景區塊 -->
     <div class="bg-light my-5 py-5">
         <div class="container">
-            <h1 class="text-center py-5">How to contact us</h1>
+            <h1 class="text-center py-5" data-aos="fade-down">How to contact us</h1>
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-3">
-                    <img src="./img/iphone.png" alt="手機" class="w-100">
+                    <img src="./img/iphone1.png" alt="手機" class="w-100" data-aos="fade-right" data-aos-delay="300">
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-9">
+                <div class="col-sm-12 col-md-12 col-lg-9" data-aos="fade-left" data-aos-offset="500" data-aos-delay="200">
                     <div class="content-box d-inline-flex">
                         <img src="./img/contact_phone.png" alt="" class="p-2 icon-style icon-5">
                         <div class="p-3">
@@ -163,8 +165,8 @@
 
     <!-- 容器 -->
     <div class="container my-5 py-5">
-        <h1 class="text-center py-5">About us</h1>
-        <p class="p-5">我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案。</p>
+        <h1 class="text-center py-5" data-aos="fade-down">About us</h1>
+        <p class="p-5" data-aos="zoom-in" data-aos-delay="400">我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案，我是文案。</p>
         <button type="button" class="btn btn-primary d-block mx-auto my-1 px-5 py-3">看更多</button>
     </div>
 
@@ -182,6 +184,11 @@
         </div>
     </div>
 
+    <!--AOS JS CDN-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- Bootstrap JS CDN -->
     <!-- 執行完所有 HTML 再執行 JS -->
