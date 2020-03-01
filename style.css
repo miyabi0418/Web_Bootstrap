@@ -1,0 +1,29 @@
+.card {
+  display: block;
+}
+
+.icon-style {
+  background-color: #eee;
+  border-radius: 50% !important;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.icon-style:hover {
+  background-color: #66d6c5;
+}
+
+.icon-5 {
+  width: 64px;
+  height: 64px;
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel-inner {
+    height: 80vh;
+  }
+  .carousel-inner .carousel-caption {
+    bottom: 70vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
